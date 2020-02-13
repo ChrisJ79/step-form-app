@@ -4,6 +4,10 @@ object-assign
 @license MIT
 */
 
+/*!
+ * Programatically add the following
+ */
+
 /** @license React v0.18.0
  * scheduler.production.min.js
  *
