@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/step-form-app/precache-manifest.d1c9f28038e47b2f453ee764dd479541.js"
+  "/step-form-app/precache-manifest.8e3cb4c9f62b547ebda545145303f402.js"
 );
 
 self.addEventListener('message', (event) => {
