@@ -6,7 +6,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 import '../App.css';
 
-class FormPersonalDetails extends Component {
+class FormUserDetails extends Component {
     continue = e => {
         e.preventDefault();
         this.props.nextStep();
@@ -30,10 +30,30 @@ class FormPersonalDetails extends Component {
                         onChange={handleChange('lastName')}
                         defaultValue={values.lastName}
                     />
+                    <br/>
+                    <TextField
+                        hintText="Enter Your Email"
+                        floatingLabelText="Email"
+                        onChange={handleChange('email')}
+                        defaultValue={values.email}
+                    />
+                    <br/>
+                    <RaisedButton
+                        label="Continue"
+                        primary={true}
+                        style={styles.button}
+                        onClick={this.continue}
+                    />
                  </React.Fragment>
             </MuiThemeProvider>
         );
     }
 }
 
-export default FormPersonalDetails;
+const styles = {
+    button: {
+        margin: 15
+    }
+}
+
+export default FormUserDetails;

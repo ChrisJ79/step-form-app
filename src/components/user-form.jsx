@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import FormUserDetails from './form-user-details';
+import FormPersonalDetails from './form-personal-details';
 import '../App.css';
 
 class UserForm extends Component {
@@ -21,7 +22,7 @@ nextStep = () => {
   });
 }
 
-// Proceed to the previous step
+// Back to the previous step
 prevStep = () => {
   const {step} = this.state;
   this.setState({
