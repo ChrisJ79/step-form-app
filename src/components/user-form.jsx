@@ -11,6 +11,7 @@ class UserForm extends Component {
         lastName: '',
         email: '',
         occupation: '',
+        city: '',
         bio: ''
     }
 
@@ -54,7 +55,12 @@ handleChange = input => e => {
       case 2:
         return (
           <div>
-            <h1>FormPersonalDetails</h1>
+            <FormPersonalDetails
+              nextStep = {this.nextStep}
+              prevStep = {this.prevStep}
+              handleChange = {this.handleChange}
+              values = {values}
+            />
           </div>
         )
       case 3:
