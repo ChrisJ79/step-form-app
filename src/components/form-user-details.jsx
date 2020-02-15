@@ -15,7 +15,7 @@ class FormUserDetails extends Component {
         const {values, handleChange} = this.props;
         return (
             <MuiThemeProvider>
-                 <React.Fragment>
+                 <React.Fragment className="reactFragment">
                     <AppBar title="Enter User Details" align="center" />
                     <TextField
                         hintText="Enter Your First Name"
@@ -44,6 +44,8 @@ class FormUserDetails extends Component {
                         style={styles.button}
                         onClick={this.continue}
                     />
+                    <h1>Multi-Step Form</h1>
+                    <p>Built using React.js & Material UI</p>
                  </React.Fragment>
             </MuiThemeProvider>
         );

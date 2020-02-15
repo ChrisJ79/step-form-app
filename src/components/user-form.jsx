@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import FormUserDetails from './form-user-details';
 import FormPersonalDetails from './form-personal-details';
+import Confirm from './confirm';
+import Success from './success';
 import '../App.css';
 
 class UserForm extends Component {
@@ -38,7 +40,7 @@ handleChange = input => e => {
 }
 
   render() {
-    const {step } = this.state;
+    const {step} = this.state;
     const {firstName, lastName, email, occupation, city, bio} = this.state;
     const values = {firstName, lastName, email, occupation, city, bio};
     switch (step) {
@@ -51,7 +53,7 @@ handleChange = input => e => {
               values = {values}
             />
           </div>
-        )
+        );
       case 2:
         return (
           <div>
@@ -62,19 +64,23 @@ handleChange = input => e => {
               values = {values}
             />
           </div>
-        )
+        );
       case 3:
         return (
           <div>
-            <h1>Confirm</h1>
+            <Confirm
+              nextStep = {this.nextStep}
+              prevStep = {this.prevStep}
+              values = {values}
+            />
           </div>
-        )
+        );
       case 4:
         return (
           <div>
-            <h1>Success</h1>
+            <Success />
           </div>
-        )
+        );
       }
     }
   }
