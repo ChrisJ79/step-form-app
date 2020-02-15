@@ -26,7 +26,7 @@ class Confirm extends Component {
         return (
             <MuiThemeProvider>
                  <React.Fragment className="reactFragment">
-                    <AppBar title="Confirm Your Information" align="center" />
+                    <AppBar title="Confirm Your Information" align="center" showMenuIconButton={false} />
                     <List>
                         <ListItem
                                 primaryText="First Name:"

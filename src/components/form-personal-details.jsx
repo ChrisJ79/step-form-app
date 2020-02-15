@@ -22,7 +22,7 @@ class FormPersonalDetails extends Component {
         return (
             <MuiThemeProvider>
                  <React.Fragment className="reactFragment">
-                    <AppBar title="Enter Personal Details" align="center" />
+                    <AppBar title="Enter Personal Details" align="center" showMenuIconButton={false} />
                     <TextField
                         hintText="Enter Your Occupation"
                         floatingLabelText="Occupation"

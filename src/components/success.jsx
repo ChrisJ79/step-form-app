@@ -21,7 +21,7 @@ class Success extends Component {
         return (
             <MuiThemeProvider>
                  <React.Fragment className="reactFragment">
-                    <AppBar title="Success" align="center" />
+                    <AppBar title="Success" align="center" showMenuIconButton={false} />
                     <h1>Thank you for your submission!</h1>
                     <p>You will receive an email confirmation shortly.</p>
                  </React.Fragment>
